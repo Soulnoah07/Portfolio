@@ -160,7 +160,7 @@ header{
 }
 .about-container1{
     position: relative;
-    top: 200px;
+    top: 250px;
     left: 150px;
     color: white;
     width: 450px;
@@ -186,14 +186,20 @@ header{
      border: none;
      border-radius: 5px;
 }
-.about-container3{
+.about-container2{
+    margin-top: -150px;
+    margin-left: 600px;
     display: flex;
     flex-wrap: wrap;
 }
-.about-container3 > img{
-
-    height: 400px;
-    width:400px;
+.about-container2 > img{
+    border-radius: 20px;
+    width: 370px;
+    height: 370px;;
+}
+.about-container4{
+    margin-top: 20px;
+    margin-left: 40px;
 }
 table{
     margin-left: -20px;
@@ -202,10 +208,17 @@ table{
 td{
     padding-left: 20px;
 }
-
-
 .card{
-    background:#18181B;
+
+    border: 1px solid whitesmoke;
+    padding: 15px 50px 0px 120px;
+    margin-bottom: 20px;
+    background:#4c4c50;
     border:1px solid #2A2A36;
     border-radius:20px;
+    opacity: 0.5;
+}
+.con2 > div{
+    opacity: 1;
+    color: white;
 }
