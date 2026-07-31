@@ -178,7 +178,7 @@ header{
     flex-wrap: wrap;
 }
 .about-container2  img{
-    border-radius: 20px;
+    border-radius: 50%;
     width: 390px;
     height: 390px;
     box-shadow: 0 0 12px 1px #8B5CF6;
@@ -201,7 +201,12 @@ td{
     border-radius:20px;
     opacity: 0.5;
     margin-bottom: 35px;
+    transition: all 1s;
+    
+}
+.card:hover{
     box-shadow: 0 0 22px 1px #8B5CF6;
+    transform: scale(1.1);
 }
 .con2  div{
     opacity: 1;
@@ -236,14 +241,14 @@ td{
     border-radius: 10px;
     transition: all 1s;
 }
-.skill-images  div  img{
+.skill-images  img{
     position: relative;
     top: 20px;
     height: 100px;
     opacity: 1;
 }
-.skill-images div h1{
-    margin-top: 45px;
+.skill-images  h1{
+    color: white;
     font-size: 18px;
     text-decoration:underline ;
 }
