@@ -7,22 +7,6 @@
     color: white;
     scroll-behavior:smooth;
 }
-:root{
---bg:#09090B;
---bg2:#0F172A;
---card:#18181B;
---border:#2A2A36;
-
---primary:#8B5CF6;
---secondary:#A855F7;
---accent:#C084FC;
-
---white:#FFFFFF;
---text:#D1D5DB;
---muted:#9CA3AF;
-
---shadow:rgba(139,92,246,.35);
-}
 section{
     border-top:1px solid rgba(255, 255, 255, 0.003);
 }
@@ -43,7 +27,7 @@ header{
 }
 .nav-links{
     margin-top: 10px;
-    margin-left: 550PX;
+    margin-left: 400PX;
 }
 .nav-links > li{
     padding: 5px 20px 5px 20px;
@@ -176,6 +160,9 @@ header{
     border-radius: 5px;
     transition: all 0.7s ;
 }
+.about-container1 > button > a{
+    text-decoration: none;
+}
 .about-container1 > button:hover{
     transform: scale(1.2);
     box-shadow: 0 0 20px 1px #8B5CF6;
@@ -239,15 +226,23 @@ td{
 }
 
 .skill-images  div{
-    height: 220px;
+    height: 200px;
     width: 300px;
     background-color: #4c4c50;
-    opacity: .6;
+    opacity: .8;
     border-radius: 10px;
     transition: all 1s;
 }
-.skill-images > div > img{
-    height: 10px;
+.skill-images  div  img{
+    position: relative;
+    top: 20px;
+    height: 100px;
+    opacity: 1;
+}
+.skill-images div h1{
+    margin-top: 45px;
+    font-size: 18px;
+    text-decoration:underline ;
 }
 .skill-images div:hover{
     transform: scale(1.1);
