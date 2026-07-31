@@ -27,26 +27,29 @@ header{
 }
 .nav-links{
     margin-top: 10px;
-    margin-left: 460PX;
+    margin-left: 350PX;
 }
-.nav-links > li{
-    padding: 5px 10px 5px 20px;
+.nav-links  li{
+    padding: 5px 20px 5px 20px;
     display: inline-flex;
     text-decoration: none;
     margin-right: 20px;
     border-radius: 5px;
     transition:all 0.9s;
 }
-.nav-links > li:hover{
+.nav-links  li:hover{
     background:radial-gradient(#8B5CF6);
     box-shadow : 0 0 20px 1px #8B5CF6;
     transform: scale(1.2);
 }
-.nav-links li > a {
+.nav-links li  a {
     color: white;
     text-decoration: none;
     padding: 10px 10p 10px 10px;
     font-size: 18px;
+}
+.nav-links button{
+
 }
 
 /* Styling for section - 1 */
@@ -67,30 +70,30 @@ header{
     top: 200px;
     left: 150px;
 }
-.content1 > h1{
+.content1  h1{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.content1 > h2,p{
+.content1  h2,p{
     margin-bottom: 20px;
     font-size: 20px;
 }
-.content1 > :nth-child(1){
+.content1  :nth-child(1){
     font-size: 20px;
     font-weight: 700;
     opacity: 1;
 }
-.content1 > :nth-child(1) > span{
+.content1  :nth-child(1) > span{
     color: #8B5CF6;
 }
-.content1 > :nth-child(3){
+.content1  :nth-child(3){
     color: #8B5CF6;
 }
-.content1 > h1 > span{
+.content1  h1  span{
     font-size: 35px;
     font-weight: 600;
 }
-.content1 > p{
+.content1  p{
     font-weight: 100;
     opacity: 0.7;
 }
@@ -98,7 +101,7 @@ header{
     margin-top: 200px;
     margin-left: 150px;
 }
-.content2 > button{
+.content2  button{
     width: 180px;
     height: 40px;
     color: white;
@@ -111,7 +114,7 @@ header{
     transition: all 0.8s;
     
 }
-.content2 > button:hover{
+.content2  button:hover{
     transform: scale(1.2);
     box-shadow: 0 0 5px 2px #8B5CF6;
 }
@@ -119,7 +122,7 @@ header{
     margin-top: 30px;
     margin-left: 150px;
 }
-.content3 > a > img{
+.content3  a  img{
     height: 30px;
     margin-right: 40px;
 
@@ -139,16 +142,16 @@ header{
     width: 450px;
     height: 400px;
 }
-.about-container1 > h3{
+.about-container1  h3{
     color: #8B5CF6;
 }
-.about-container1 > h3,h2,p,button{
+.about-container1  h3,h2,p,button{
     margin-bottom: 30px;
 }
-.about-container1 > p{
+.about-container1  p{
     opacity: 0.7;
 }
-.about-container1 > button{
+.about-container1  button{
     height: 40px;
     width: 200px;
     margin-top: 20px;
@@ -160,10 +163,10 @@ header{
     border-radius: 5px;
     transition: all 0.7s ;
 }
-.about-container1 > button > a{
+.about-container1  button  a{
     text-decoration: none;
 }
-.about-container1 > button:hover{
+.about-container1  button:hover{
     transform: scale(1.2);
     box-shadow: 0 0 20px 1px #8B5CF6;
 
@@ -174,7 +177,7 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-.about-container2 > img{
+.about-container2  img{
     border-radius: 20px;
     width: 390px;
     height: 390px;
@@ -200,7 +203,7 @@ td{
     margin-bottom: 35px;
     box-shadow: 0 0 22px 1px #8B5CF6;
 }
-.con2 > div{
+.con2  div{
     opacity: 1;
     color: white;
 }
@@ -213,7 +216,7 @@ td{
     background-size: cover;
     text-align: center;
 }
-.skill-container > h1 {
+.skill-container  h1 {
     padding-top: 50px;
     color:#A855F7;
 }
@@ -248,4 +251,128 @@ td{
     transform: scale(1.1);
     box-shadow: 0 0 20px 1px #8B5CF6;
 
+}
+/* Styling for Project section */
+.pro-container{
+    background-color:#0F172A;
+    height: 100vh;
+}
+.pro-con1{
+    display: flex;
+    justify-content: space-between;
+    margin-right:20px;
+    padding-top: 50px;
+    padding:50px 50px 20px 50px ;
+}
+.pro-con1 h1{
+    color: #8B5CF6;
+}
+.pro-con1 a{
+    color: #8B5CF6;
+    text-decoration: none;
+}
+.pro-con2{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    row-gap: 60px;
+    margin:10px 0px 0px 50px;
+}
+.pro-card{
+    height: 300px;
+    width: 300px;
+    background-color: #4c4c50;
+    opacity: 0.6;
+    border-radius: 10px;
+
+    transition: all 1s;
+}
+.pro-card:hover{
+        box-shadow: 0 0 10px 1px #8B5CF6;
+    transform: scale(1.1);
+}
+.pro-card h3{
+    margin-bottom: 10px ;
+    color: #f7f7f7;
+}
+.pro-card p{
+    font-size: 12px;
+    opacity: 0.7;
+    width: 280px;
+}
+.pro-card button{
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #8B5CF6;
+    position: relative;
+    top: -20px;
+
+}
+.pro-con2 button a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.pro-card div{
+    position: relative;
+    top: 180px;
+    left: 20px;
+}
+.ser-bg{
+    height: 100vh;
+    background-image: url(./images/BG-images/services.png);
+}
+.ser-bg h1{
+    padding-top: 100px;
+    text-align: center;
+    color: #8B5CF6;
+}
+.ser-container{
+    height: 400px;
+    width: 400px;
+    background-color: #4c4c50;
+    opacity: 0.6;
+    border-radius: 10px;
+    transition: all 1s;
+    margin-top: 40px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    transition: all 1s;
+}
+.ser-container:hover{
+    box-shadow: 0 0 10px 1px #8B5CF6;
+    transform: scale(1.1);
+}
+.full-ser{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    column-gap: 70px;
+}
+.ser-card{
+    position: relative;
+    top: 230px;
+    left: 30px;
+}
+.ser-card h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.ser-card p{
+    font-size: 15px;
+    width: 350px;
+    opacity: 0.7;
+}
+
+/* Styling for contact section */
+.contact-bg{
+    background-color:#0F172A ;
+    height: 100vh;
+}
+.final{
+    height: 400px;
+    background-image: url(./images/BG-images/footer.png);
+    background-size: cover;
 }
