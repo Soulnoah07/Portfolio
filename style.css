@@ -28,6 +28,12 @@ button:hover{
     transform: scale(1.2);
     box-shadow: 0 0 5px 2px var(--primary-color);
 }
+a{
+    color: var(--font-color);
+    text-decoration: none;
+    padding: 10px 10p 10px 10px;
+    font-size: 18px;
+}
 section{
     border-top:1px solid var(--bg-color);
 }
@@ -62,12 +68,6 @@ header{
     background:radial-gradient(var(--primary-color));
     box-shadow : 0 0 20px 1px var(--primary-color);
     transform: scale(1.2);
-}
-.nav-links li  a {
-    color: var(--font-color);
-    text-decoration: none;
-    padding: 10px 10p 10px 10px;
-    font-size: 18px;
 }
 /* Styling for section - 1 */
 
@@ -148,9 +148,6 @@ header{
 }
 .about-container1  p{
     opacity: 0.7;
-}
-.about-container1  button  a{
-    text-decoration: none;
 }
 .about-container2{
     margin-top: -150px;
@@ -253,10 +250,6 @@ td{
 .pro-con1 h1{
     color: #8B5CF6;
 }
-.pro-con1 a{
-    color: #8B5CF6;
-    text-decoration: none;
-}
 .pro-con2{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -283,11 +276,6 @@ td{
     font-size: 12px;
     opacity: 0.7;
     width: 280px;
-}
-.pro-con2 button a{
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
 }
 .pro-card div{
     position: relative;
