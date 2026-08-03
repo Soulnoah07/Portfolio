@@ -6,21 +6,23 @@
     font-family: sans-serif;
     color: white;
     scroll-behavior:smooth;
+    cursor: pointer;
+    border: none;
 }
 :root{
     --primary-color:#8B5CF6;
     --font-color:white;
     --bg-color: #0F172A;
+    --border-radius:5px;
 }
 button{
     width: 180px;
     height: 40px;
     color: var(--font-color);
     background:linear-gradient(90deg,var(--primary-color),var(--primary-color));
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    border: none;
-    border-radius: 5PX;
+    border-radius: var(--border-radius);
     margin-right: 20px;
     transition: all 0.8s;
 }
@@ -61,7 +63,7 @@ header{
     display: inline-flex;
     text-decoration: none;
     margin-right: 20px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     transition:all 0.9s;
 }
 .nav-links  li:hover{
@@ -76,6 +78,7 @@ header{
     background-image: url(./images/BG-images/home.png);
     background-repeat: no-repeat;
     color: var(--font-color);
+    background-position: center;
     background-size:cover;
 }
 .content1{
@@ -167,6 +170,7 @@ header{
 table{
     margin-left: -20px;
     text-align: left;
+    margin-bottom: 20px;
 }
 td{
     padding-left: 20px;
@@ -205,7 +209,7 @@ td{
 }
 .skill-images{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:1fr 1fr 1fr 1fr;
     column-gap: normal;
     row-gap: 30px;
     margin:25px 0px 0px 50px;
@@ -216,7 +220,7 @@ td{
     width: 300px;
     background-color: #4c4c50;
     opacity: .8;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     transition: all 1s;
 }
 .skill-images  img{
@@ -252,7 +256,7 @@ td{
 }
 .pro-con2{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:1fr 1fr 1fr 1fr;
     row-gap: 60px;
     margin:10px 0px 0px 50px;
 }
@@ -261,7 +265,7 @@ td{
     width: 300px;
     background-color: #4c4c50;
     opacity: 0.6;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     transition: all 1s;
 }
 .pro-card:hover{
@@ -279,8 +283,13 @@ td{
 }
 .pro-card div{
     position: relative;
-    top: 180px;
+    top: 160px;
     left: 20px;
+}
+.pro-card button{
+    margin-top: -25px;
+    height: 30px;
+    width: 100px;
 }
 .ser-bg{
     height: 100vh;
@@ -296,7 +305,7 @@ td{
     width: 400px;
     background-color: #4c4c50;
     opacity: 0.6;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     transition: all 1s;
     margin-top: 40px;
     position: relative;
@@ -361,7 +370,7 @@ td{
   margin-top: 20px;                           
   box-sizing: border-box;      
   border: 2px solid #ccc;       
-  border-radius: 10px;           
+  border-radius: var(--border-radius);           
   font-size: 16px;              
   background-color: #4c4c50; 
   backface-visibility: visible; 
@@ -371,6 +380,14 @@ td{
 }
 .contact-card input:nth-of-type(4) {
     padding-bottom:200px ;
+    margin-bottom: 20px;
+}
+.card-content button{
+    width: 600px;
+    margin-left: 20px;
+}
+.card-content button:hover{
+    transform: none;
 }
 
 .card-content input::placeholder{
