@@ -7,17 +7,38 @@
     color: white;
     scroll-behavior:smooth;
 }
+:root{
+    --primary-color:#8B5CF6;
+    --font-color:white;
+    --bg-color: #0F172A;
+}
+button{
+    width: 180px;
+    height: 40px;
+    color: var(--font-color);
+    background:linear-gradient(90deg,var(--primary-color),var(--primary-color));
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5PX;
+    margin-right: 20px;
+    transition: all 0.8s;
+}
+button:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 5px 2px var(--primary-color);
+}
 section{
-    border-top:1px solid rgba(255, 255, 255, 0.003);
+    border-top:1px solid var(--bg-color);
 }
 /* styling for header section */
 header{
-    color: white;
+    color: var(--font-color);
 }
 .navbar{
     height: 60px;
     width: 100%;
-    background-color:#09090B ;
+    background-color:var(--bg-color);
     display: flex;
     padding: 10px 0px 2px 0px;
 }
@@ -38,12 +59,12 @@ header{
     transition:all 0.9s;
 }
 .nav-links  li:hover{
-    background:radial-gradient(#8B5CF6);
-    box-shadow : 0 0 20px 1px #8B5CF6;
+    background:radial-gradient(var(--primary-color));
+    box-shadow : 0 0 20px 1px var(--primary-color);
     transform: scale(1.2);
 }
 .nav-links li  a {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     padding: 10px 10p 10px 10px;
     font-size: 18px;
@@ -54,10 +75,8 @@ header{
     height: 100vh;
     background-image: url(./images/BG-images/home.png);
     background-repeat: no-repeat;
-    color: white;
+    color: var(--font-color);
     background-size:cover;
-
-
 }
 .content1{
     height: 300px;
@@ -80,10 +99,10 @@ header{
     opacity: 1;
 }
 .content1  :nth-child(1) > span{
-    color: #8B5CF6;
+    color: var(--primary-color);
 }
 .content1  :nth-child(3){
-    color: #8B5CF6;
+    color: var(--primary-color);
 }
 .content1  h1  span{
     font-size: 35px;
@@ -97,23 +116,6 @@ header{
     margin-top: 200px;
     margin-left: 150px;
 }
-.content2  button{
-    width: 180px;
-    height: 40px;
-    color: white;
-    background:linear-gradient(90deg,#8B5CF6,#A855F7);
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 5PX;
-    margin-right: 20px;
-    transition: all 0.8s;
-    
-}
-.content2  button:hover{
-    transform: scale(1.2);
-    box-shadow: 0 0 5px 2px #8B5CF6;
-}
 .content3{
     margin-top: 30px;
     margin-left: 150px;
@@ -126,7 +128,7 @@ header{
 
 /* Styling for About */
 .about-container{
-    background-color: #0F172A;
+    background-color: var(--bg-color);
     height: 100vh;
     background-size: cover;
 }
@@ -134,12 +136,12 @@ header{
     position: relative;
     top: 250px;
     left: 120px;
-    color: white;
+    color: var(--font-color);
     width: 450px;
     height: 400px;
 }
 .about-container1  h3{
-    color: #8B5CF6;
+    color: var(--primary-color);
 }
 .about-container1  h3,h2,p,button{
     margin-bottom: 30px;
@@ -147,25 +149,8 @@ header{
 .about-container1  p{
     opacity: 0.7;
 }
-.about-container1  button{
-    height: 40px;
-    width: 200px;
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    background:linear-gradient(90deg,#8B5CF6,#A855F7);
-    border: none;
-    border-radius: 5px;
-    transition: all 0.7s ;
-}
 .about-container1  button  a{
     text-decoration: none;
-}
-.about-container1  button:hover{
-    transform: scale(1.2);
-    box-shadow: 0 0 20px 1px #8B5CF6;
-
 }
 .about-container2{
     margin-top: -150px;
@@ -177,7 +162,7 @@ header{
     border-radius: 50%;
     width: 390px;
     height: 390px;
-    box-shadow: 0 0 12px 1px #8B5CF6;
+    box-shadow: 0 0 12px 1px var(--primary-color);
 }
 .about-container4{
     margin-left: 40px;
@@ -190,7 +175,7 @@ td{
     padding-left: 20px;
 }
 .card{
-    border: 1px solid whitesmoke;
+    border: 1px solid var(--font-color);
     padding: 15px 50px 0px 120px;
     background:#4c4c50;
     border:1px solid #2A2A36;
@@ -284,11 +269,10 @@ td{
     background-color: #4c4c50;
     opacity: 0.6;
     border-radius: 10px;
-
     transition: all 1s;
 }
 .pro-card:hover{
-        box-shadow: 0 0 10px 1px #8B5CF6;
+    box-shadow: 0 0 10px 1px #8B5CF6;
     transform: scale(1.1);
 }
 .pro-card h3{
@@ -299,16 +283,6 @@ td{
     font-size: 12px;
     opacity: 0.7;
     width: 280px;
-}
-.pro-card button{
-    height: 30px;
-    width: 100px;
-    border: none;
-    border-radius: 10px;
-    background-color: #8B5CF6;
-    position: relative;
-    top: -20px;
-
 }
 .pro-con2 button a{
     color: white;
@@ -393,7 +367,7 @@ td{
 .contact-card div{
     padding-top: 8px;
 }
-.card-content input[type="text"] {
+.card-content input[type="text"],input[type="textarea"] {
   width: 300px;                 
   padding: 12px 20px;
   margin-top: 20px;                           
@@ -404,32 +378,13 @@ td{
   background-color: #4c4c50; 
   backface-visibility: visible; 
 }
-.contact-card input[type="textarea"]{
+.contact-card input[type="textarea"] {
   width: 605px;                 
-  padding: 12px 20px;
-  margin-top: 20px;                           
-  box-sizing: border-box;      
-  border: 2px solid #ccc;       
-  border-radius: 10px;           
-  font-size: 16px;              
-  background-color: #4c4c50; 
-  backface-visibility: visible; 
 }
 .contact-card input:nth-of-type(4) {
     padding-bottom:200px ;
 }
-.contact-card button{
-    height: 40px;
-    width: 605px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    background-color: #8B5CF6;
-    backface-visibility: visible;
-    font-size: 15px;
-    font-weight: 600;
-    box-shadow: 0 0 10px 1px #8B5CF6;
-}
+
 .card-content input::placeholder{
     color: white;
 }
