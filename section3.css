@@ -1,0 +1,44 @@
+/* Styling for Skill section */
+
+.skill-container{
+    background-image: url(./images/BG-images/about.png);
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+}
+.skill-container  h1 {
+    padding-top: 50px;
+    color:#A855F7;
+}
+.skill-images{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap: normal;
+    row-gap: 30px;
+    margin:25px 0px 0px 50px;
+}
+
+.skill-images  div{
+    height: 200px;
+    width: 300px;
+    background-color: #4c4c50;
+    opacity: .8;
+    border-radius: var(--border-radius);
+    transition: all 1s;
+}
+.skill-images  img{
+    position: relative;
+    top: 20px;
+    height: 100px;
+    opacity: 1;
+}
+.skill-images  h1{
+    color: white;
+    font-size: 18px;
+    text-decoration:underline ;
+}
+.skill-images div:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 1px #8B5CF6;
+
+}

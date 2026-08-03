@@ -1,0 +1,54 @@
+.contact-bg{
+    background-color:#0F172A ;
+    height: 100vh;
+}
+.contact-full{
+    text-align: center;
+}
+.contact-full h1{
+    padding-top: 70px;
+    color:#8B5CF6;
+}
+.contact-card{
+    height: 500px;
+    width: 700px;
+    background-color: #4c4c50;
+    opacity: 0.7;
+    border-radius: 20px;
+    backface-visibility: visible;
+    position: relative;
+    top:40px;
+    left: 410px;
+}
+.contact-card div{
+    padding-top: 8px;
+}
+.card-content input[type="text"],input[type="textarea"] {
+  width: 300px;                 
+  padding: 12px 20px;
+  margin-top: 20px;                           
+  box-sizing: border-box;      
+  border: 2px solid #ccc;       
+  border-radius: var(--border-radius);           
+  font-size: 16px;              
+  background-color: #4c4c50; 
+  backface-visibility: visible; 
+}
+.contact-card input[type="textarea"] {
+  width: 605px;                 
+}
+.contact-card input:nth-of-type(4) {
+    padding-bottom:200px ;
+    margin-bottom: 20px;
+}
+.card-content button{
+    width: 600px;
+    margin-left: 20px;
+}
+.card-content button:hover{
+    transform: none;
+}
+
+.card-content input::placeholder{
+    color: white;
+}
