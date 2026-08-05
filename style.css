@@ -42,21 +42,19 @@ section{
 /* styling for header section */
 header{
     color: var(--font-color);
+    background-color:var(--bg-color);
 }
 .navbar{
     height: 60px;
     width: 100%;
-    background-color:var(--bg-color);
-    display: flex;
-    padding: 10px 0px 2px 0px;
 }
 .logo{
-    margin-top: 10px;
     margin-left: 80px;
+    padding: 10px 50px;
 }
 .nav-links{
-    margin-top: 10px;
-    margin-left: 350PX;
+    margin: -40px 0px 0px 600px;
+    display:flex;
 }
 .nav-links  li{
     padding: 5px 20px 5px 20px;
@@ -71,16 +69,6 @@ header{
     box-shadow : 0 0 20px 1px var(--primary-color);
     transform: scale(1.2);
 }
-
-
-
-
-
-
-
-
-/* Styling for contact section */
-
 .final{
     height: 400px;
     background-image: url(./images/BG-images/footer.png);
