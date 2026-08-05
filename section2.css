@@ -3,11 +3,10 @@
     background-color: var(--bg-color);
     height: 100vh;
     background-size: cover;
+    display: flex;
 }
 .about-container1{
-    position: relative;
-    top: 250px;
-    left: 120px;
+    padding: 250px 0px 0px 120px;
     color: var(--font-color);
     width: 450px;
     height: 400px;
@@ -22,10 +21,8 @@
     opacity: 0.7;
 }
 .about-container2{
-    margin-top: -150px;
-    margin-left: 600px;
     display: flex;
-    flex-wrap: wrap;
+    margin: 250px 0px 0px 80px;
 }
 .about-container2  img{
     border-radius: 50%;
@@ -34,7 +31,7 @@
     box-shadow: 0 0 12px 1px var(--primary-color);
 }
 .about-container4{
-    margin-left: 40px;
+    margin-left: 70px;
 }
 table{
     margin-left: -20px;
