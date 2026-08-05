@@ -534,7 +534,6 @@ button {
 
     .navbar {
         flex-direction: column;
-        padding-bottom: 10px;
     }
 
     .logo {
@@ -547,9 +546,7 @@ button {
     }
 
     .nav-links {
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
+        display: none;
     }
 
     .nav-links li {
