@@ -683,9 +683,13 @@ button {
     }
 
     .pro-card p {
-        width: auto;
+        display: flex;
+        flex-wrap: wrap;
         font-size: 11px;
     }
+   .pro-card div{
+    margin-top: -20px;
+   }
 
 
     /* ---------- SERVICES ---------- */
@@ -709,6 +713,11 @@ button {
 
     .ser-card h3 {
         font-size: 17px;
+    }
+    .ser-card p{
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 20px;
     }
 
 
