@@ -20,7 +20,7 @@ button{
     min-height: 40px;
     color: var(--font-color);
     background:linear-gradient(90deg,var(--primary-color),var(--primary-color));
-    font-size: 15px;
+    font-size: clamp(1.5rem,3vh,2.5);
     font-weight: 600;
     border-radius: var(--border-radius);
     margin-right: 20px;
@@ -46,19 +46,21 @@ header{
 }
 .navbar{
     height: 60px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 .logo{
+    display: inline-block;
     margin-left: 80px;
     padding: 10px 50px;
 }
 .nav-links{
-    margin: -40px 0px 0px 600px;
-    display:flex;
+    display: flex;
+    margin-top: 15px;
 }
 .nav-links  li{
     padding: 5px 20px 5px 20px;
-    display: inline-flex;
+    display: inline-block;
     text-decoration: none;
     margin-right: 20px;
     border-radius: var(--border-radius);
@@ -263,19 +265,21 @@ td{
     width: 280px;
 }
 .pro-card div{
-    position: relative;
-    top: 160px;
-    left: 20px;
+    margin-top: 150px;
+    margin-left: 20px;
 }
 .pro-card button{
     margin-top: -25px;
     height: 30px;
-    width: 100px;
+    width: 80px;
 }
 
 .ser-bg{
-    height: 100vh;
+    height:100vh;
     background-image: url(./images/BG-images/services.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .ser-bg h1{
     padding-top: 100px;
@@ -287,12 +291,10 @@ td{
     width: 400px;
     background-color: #4c4c50;
     opacity: 0.6;
+    margin-top: 150px;
+    margin-left: 40px;
+    display: inline-block;
     border-radius: var(--border-radius);
-    transition: all 1s;
-    margin-top: 40px;
-    position: relative;
-    top: 100px;
-    left: 100px;
     transition: all 1s;
 }
 .ser-container:hover{
@@ -300,7 +302,6 @@ td{
     transform: scale(1.1);
 }
 .full-ser{
-    display: inline-block;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     column-gap: 70px;
@@ -339,9 +340,7 @@ td{
     opacity: 0.7;
     border-radius: 20px;
     backface-visibility: visible;
-    position: relative;
-    top:40px;
-    left: 410px;
+
 }
 .contact-card div{
     padding-top: 8px;
@@ -375,9 +374,6 @@ td{
 .card-content input::placeholder{
     color: white;
 }
-
-
-
 .final{
     height: 400px;
     background-image: url(./images/BG-images/footer.png);
