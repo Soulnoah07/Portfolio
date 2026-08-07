@@ -1,149 +1,27 @@
-@media (min-width:2000px){
-    .Home{
-        height:max-content;
-    }
-   .navbar{
-    height: 120px;
-    display: flex;
-    justify-content: space-around;
-   }
-   .logo{
-    font-size: 2rem;
-    padding-top: 20px;
-    display: inline-block;
-   }
+@media (min-width:320px){
     .nav-links{
-    display: inline-block;
-    margin-top: 25px;
-   }
-   .nav-links li a{
-    font-size: 2.5rem;
-   }
-   .container{
-    margin: 400px;
-   }
-   .content1 h1{
-    font-size: 3.8rem;
-   }
-    .content3 a img{
-       height: 4rem;
+        display: none;
     }
-    .content2 button{
-        width: 400px;
-        height: 80px;
-        font-size: 2.5rem;
+    .content1{
+        font-size: 1rem;
     }
-    .about-container{
-        justify-content: space-around;
-        height: max-content;
-    }
-    .about-container1{
-        width: 900px;
-    }
-    .about-container h3,h2,p,button,tr,td{
-        font-size: 2.5rem; 
-    }
-    .about-container2  img{
-        height: 700px;
-        margin-left: -500px;
-    }
-    .about-container1 button{
-        width: 400px;
-        height: 80px;
-    }
-    .about-container1 button a {
-        font-size: 2.5rem;
-    }
-    .card{
-        width: 500px;
-        height: 150px;
-        margin-bottom: 100px;
-    }
-    .card div{
-        padding-top: 10px;;
-    }
-    .con2 h1{
-        font-size: 3rem;
-    }
-    .skill-container{
-        height: max-content;
-    }
-    .skill-container > h1{
-        font-size: 4.5rem;
-    }
-    .skill-images{
-        margin-left: 350px;
-    }
-    .skill-images div{
-        height: 320px;
-        width: 350px;
-        column-gap: normal;
-    }
-    .skill-images img{
-        height: 180px;
-    }
-    .skill-images h1{
-        font-size: 2.5rem;
-    }
-    .pro-container{
-        height: max-content;
-    }
-    .pro-con1{
-        font-size: 2rem;
-    }
-    .pro-con1 a{
-        font-size: 2rem;
-    }
-    .pro-card{
-        width: 600px;
-        height: 500px;
-    }
-    .pro-card h3{
-        font-size: 2.5rem;
-    }
-    .pro-card p{
-        font-size: 2rem;
-        width: 550px;
-    }
-    .pro-card div{
-        font-size: 2.5rem;
-    }
-    .pro-card button{
-        font-size: 2.5rem;
-        margin-top: 20px;
-        height: 80px;
-        width: 250px;
-    }
-    .pro-card button a{
-        font-size: 2.5rem;
-    }
-    .ser-bg{
-        height: max-content;
-    }
-
-
-
-
-
-
-}
-
-
-@media (min-width:1281px){
-    
-}
-@media (min-width:1025px){
-
-}
-@media (min-width:801px){
-
-}
-@media (min-width:600px){
 
 }
 @media (min-width:480px){
 
 }
-@media (min-width:320px){
+@media (min-width:600px){
+
+}
+@media (min-width:801px){
+
+}
+@media (min-width:1025px){
+
+}
+@media (min-width:1281px){
+    
+}
+@media (min-width:2260px){
 
 }

@@ -1,5 +1,4 @@
-/* applies for all content */
-
+ 
 *{
     margin: 0px;
     padding: 0px;
@@ -15,12 +14,13 @@
     --bg-color: #0F172A;
     --border-radius:5px;
 }
+
 button{
-    min-width: 180px;
-    min-height: 40px;
+    min-width: 80px;
+    min-height: 20px;
     color: var(--font-color);
     background:linear-gradient(90deg,var(--primary-color),var(--primary-color));
-    font-size: clamp(1.5rem,3vh,2.5);
+    font-size: 8px;
     font-weight: 600;
     border-radius: var(--border-radius);
     margin-right: 20px;
@@ -34,25 +34,23 @@ a{
     color: var(--font-color);
     text-decoration: none;
     padding: 10px 10p 10px 10px;
-    font-size: 18px;
+    font-size: 10px;
 }
 section{
     border-top:1px solid var(--bg-color);
 }
-/* styling for header section */
 header{
     color: var(--font-color);
     background-color:var(--bg-color);
 }
 .navbar{
-    height: 60px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
 }
 .logo{
-    display: inline-block;
-    margin-left: 80px;
-    padding: 10px 50px;
+    font-size: 8px;
+    padding: 10px 0px 0px 20px;
 }
 .nav-links{
     display: flex;
@@ -71,35 +69,35 @@ header{
     box-shadow : 0 0 20px 1px var(--primary-color);
     transform: scale(1.2);
 }
-
 .Home{
     height: 100vh;
-    min-width: 100% auto;
     background-image: url(./images/BG-images/home.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: var(--font-color);
 }
+
 .container{
-    margin: 200px 0px 0px 150px;
+    margin: 150px 0px 0px 20px;
     display: inline-block;
 }
 .content1  h1{
-    font-size: 30px;
+    font-size: 10px;
     margin-bottom: 10px;
 }
 .content1  h2,p{
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 10px;
 }
 .content1  :nth-child(1){
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 700;
     opacity: 1;
 }
 .content1  :nth-child(1) > span{
     color: var(--primary-color);
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 600;
 }
 .content1  :nth-child(3){
@@ -110,12 +108,11 @@ header{
     opacity: 0.7;
 }
 .content3  a  img{
-    height: 30px;
-    margin-right: 40px;
+    margin-top: 10px;
+    height: 20px;
 }
 
-
-/* Styling for About */
+/*
 .about-container{
     background-color: var(--bg-color);
     height: 100vh;
@@ -143,7 +140,8 @@ header{
 }
 .about-container2  img{
     border-radius: 50%;
-    height: 60%;
+    height : 60%;
+    width: 60%;
     box-shadow: 0 0 12px 1px var(--primary-color);
 }
 .about-container4{
@@ -177,8 +175,6 @@ td{
     color: white;
 }
 
-
-/* Styling for Skill section */
 
 .skill-container{
     background-image: url(./images/BG-images/about.png);
@@ -222,7 +218,7 @@ td{
 }
 
 
-/* Styling for Project section */
+
 .pro-container{
     background-color:#0F172A;
     height: 100vh;
@@ -337,8 +333,10 @@ td{
     color:#8B5CF6;
 }
 .contact-card{
-    height: 500px;
+    height: 550px;
     width: 700px;
+    margin-top: 80px;
+    margin-left: 100px;
     background-color: #4c4c50;
     opacity: 0.7;
     border-radius: 20px;
@@ -347,9 +345,10 @@ td{
 }
 .contact-card div{
     padding-top: 8px;
+    margin-left: 25px;
 }
-.card-content input[type="text"],input[type="textarea"] {
-  width: 300px;                 
+.card-content input[type="text"] {
+  width: 600px;                 
   padding: 12px 20px;
   margin-top: 20px;                           
   box-sizing: border-box;      
@@ -359,16 +358,12 @@ td{
   background-color: #4c4c50; 
   backface-visibility: visible; 
 }
-.contact-card input[type="textarea"] {
-  width: 605px;                 
-}
 .contact-card input:nth-of-type(4) {
     padding-bottom:200px ;
     margin-bottom: 20px;
 }
 .card-content button{
     width: 600px;
-    margin-left: 20px;
 }
 .card-content button:hover{
     transform: none;
@@ -402,10 +397,10 @@ td{
 }
 .finish{
     display: inline-flex;
-    margin-left: 50px;
+    margin-left: 180px;
 }
 .final p{
     margin-top: 30px;
     opacity: 0.5;
     font-size: 15px;
-}
+} */
